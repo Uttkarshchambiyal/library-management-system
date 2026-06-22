@@ -1,0 +1,37 @@
+erDiagram
+    PUBLISHER ||--o{ BOOK : publishes
+    PUBLISHER {
+        int publisher_id PK
+        string name
+        string contact_email
+        string phone
+    }
+    MEMBER ||--o{ BORROW_TRANSACTION : makes
+    MEMBER {
+        int member_id PK
+        string first_name
+        string last_name
+        string email
+        string phone
+        date join_date
+    }
+    BOOK ||--o{ BORROW_TRANSACTION : "is involved in"
+    BOOK {
+        int book_id PK
+        string title
+        string author
+        string isbn
+        int published_year
+        int total_copies
+        int available_copies
+        int publisher_id FK
+    }
+    BORROW_TRANSACTION {
+        int transaction_id PK
+        int book_id FK
+        int member_id FK
+        date borrow_date
+        date due_date
+        date return_date
+        enum status
+    }
