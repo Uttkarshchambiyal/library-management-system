@@ -1,6 +1,10 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=F7B731&center=true&vCenter=true&width=700&lines=📚+Library+Management+System;Manage+Books+%7C+Members+%7C+Records;Built+with+Java+%7C+Clean+%26+Simple" alt="Typing SVG" />
+<!-- Animated Wave Banner -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Library%20Management%20System&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Manage%20Books%20%7C%20Members%20%7C%20Records%20%7C%20Built%20with%20Java&descAlignY=55&descAlign=50" width="100%"/>
+
+<!-- Typing SVG - plain text, no emoji in lines -->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=F7B731&center=true&vCenter=true&multiline=false&width=600&height=60&lines=Library+Management+System;Manage+Books+and+Members;Borrow+and+Return+Records;Built+with+Java)](https://git.io/typing-svg)
 
 <br/>
 
@@ -112,23 +116,18 @@ java -cp src Main
 ┌─────────────────────────────────────────┐
 │           LIBRARY SYSTEM FLOW           │
 ├─────────────────────────────────────────┤
-│                                         │
-│  START → Main Menu                      │
-│       ├── 1. Manage Books               │
-│       │      ├── Add Book               │
-│       │      ├── Remove Book            │
-│       │      └── Search Book            │
-│       │                                 │
-│       ├── 2. Manage Members             │
-│       │      ├── Register Member        │
-│       │      └── View Members           │
-│       │                                 │
-│       ├── 3. Borrow / Return Book       │
-│       │      ├── Issue Book             │
-│       │      └── Return Book            │
-│       │                                 │
-│       └── 4. View Records & Exit        │
-│                                         │
+│  START -> Main Menu                      │
+│       |-- 1. Manage Books               │
+│       |      |-- Add Book               │
+│       |      |-- Remove Book            │
+│       |      +-- Search Book            │
+│       |-- 2. Manage Members             │
+│       |      |-- Register Member        │
+│       |      +-- View Members           │
+│       |-- 3. Borrow / Return Book       │
+│       |      |-- Issue Book             │
+│       |      +-- Return Book            │
+│       +-- 4. View Records and Exit      │
 └─────────────────────────────────────────┘
 ```
 
@@ -189,8 +188,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 [![GitHub](https://img.shields.io/badge/GitHub-Uttkarshchambiyal-181717?style=for-the-badge&logo=github)](https://github.com/Uttkarshchambiyal)
 
----
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&lines=Thanks+for+visiting!+⭐+Star+this+repo!;Built+with+❤️+by+Uttkarsh+Chambiyal" alt="footer" />
+<!-- Animated Footer Wave -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer&text=Thanks%20for%20visiting!%20Star%20this%20repo!&fontSize=18&fontColor=fff&animation=twinkling" width="100%"/>
 
 </div>
