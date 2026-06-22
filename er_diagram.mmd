@@ -1,37 +1,37 @@
 erDiagram
     PUBLISHER ||--o{ BOOK : publishes
     PUBLISHER {
-        int publisher_id PK
-        string name
-        string contact_email
-        string phone
+        INT publisher_id PK
+        VARCHAR name
+        VARCHAR contact_email
+        VARCHAR phone
     }
     MEMBER ||--o{ BORROW_TRANSACTION : makes
     MEMBER {
-        int member_id PK
-        string first_name
-        string last_name
-        string email
-        string phone
-        date join_date
+        INT member_id PK
+        VARCHAR first_name
+        VARCHAR last_name
+        VARCHAR email
+        VARCHAR phone
+        DATE join_date
     }
     BOOK ||--o{ BORROW_TRANSACTION : "is involved in"
     BOOK {
-        int book_id PK
-        string title
-        string author
-        string isbn
-        int published_year
-        int total_copies
-        int available_copies
-        int publisher_id FK
+        INT book_id PK
+        VARCHAR title
+        VARCHAR author
+        VARCHAR isbn
+        INT published_year
+        INT total_copies
+        INT available_copies
+        INT publisher_id FK
     }
     BORROW_TRANSACTION {
-        int transaction_id PK
-        int book_id FK
-        int member_id FK
-        date borrow_date
-        date due_date
-        date return_date
-        enum status
+        INT transaction_id PK
+        INT book_id FK
+        INT member_id FK
+        DATE borrow_date
+        DATE due_date
+        DATE return_date
+        ENUM status
     }
