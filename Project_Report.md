@@ -4,20 +4,12 @@
 # Library Management System
 
 <br>
-**Submitted by**<br>
-*Uttkarsh, Alok, Sahil, Abhishek, Disha Bhagyashri*
-<br>
-
-**V Sem B.Tech**<br>
-in partial fulfillment for the award of the degree of<br>
-**BACHELOR OF TECHNOLOGY**<br>
-in<br>
-**COMPUTER SCIENCE AND ENGINEERING**<br>
-
-<br>
-**Department of Computer Science and Engineering**<br>
-*PW Institute of Innovation*<br>
-June 22, 2026
+<h3>Submitted by :-</h3>
+<h4>Uttkarsh, Alok, Sahil, Abhishek, Disha Bhagyashri</h4>
+<br><h4>
+Department of Computer Science and Engineering<br>
+PW Institute of Innovation<br>
+June 22, 2026</h4>
 
 </div>
 
