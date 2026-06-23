@@ -90,7 +90,7 @@ This system ensures that the calculations for available book copies remain perfe
 ### 3.1 Entity-Relationship Diagram
 The following ER Diagram maps the conceptual relationships between Books, Publishers, Members, and Transactions.
 
-![ER Diagram](./er_diagram.png)
+![ER Diagram](./er_diagram.mmd)
 
 ### 3.2 Relational Schema
 The logical definition of tables derived from the ER Diagram.
