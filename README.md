@@ -1,160 +1,184 @@
 <div align="center">
 
-<!-- Animated Wave Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Library%20Management%20System&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=Manage%20Books%20%7C%20Members%20%7C%20Records%20%7C%20Built%20with%20Java&descAlignY=55&descAlign=50" width="100%"/>
+# Library Management System
 
-<!-- Typing SVG - plain text, no emoji in lines -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=F7B731&center=true&vCenter=true&multiline=false&width=600&height=60&lines=Library+Management+System;Manage+Books+and+Members;Borrow+and+Return+Records;Built+with+Java)](https://git.io/typing-svg)
-
-<br/>
+### Manage Books | Members | Borrow Records | Built with Node.js & MySQL
 
 [![GitHub stars](https://img.shields.io/github/stars/Uttkarshchambiyal/library-management-system?style=for-the-badge&color=yellow&logo=github)](https://github.com/Uttkarshchambiyal/library-management-system/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Uttkarshchambiyal/library-management-system?style=for-the-badge&color=blue&logo=github)](https://github.com/Uttkarshchambiyal/library-management-system/network)
 [![GitHub issues](https://img.shields.io/github/issues/Uttkarshchambiyal/library-management-system?style=for-the-badge&color=red&logo=github)](https://github.com/Uttkarshchambiyal/library-management-system/issues)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)]()
-
-<br/>
-
-> **A full-featured Library Management System built in Java — manage books, members, borrow/return records, and more with a clean console interface.**
-
----
-
-</div>
-
-## 🗂️ Table of Contents
-
-- [✨ Features](#-features)
-- [🛠️ Tech Stack](#️-tech-stack)
-- [📁 Project Structure](#-project-structure)
-- [🚀 Getting Started](#-getting-started)
-- [📖 How It Works](#-how-it-works)
-- [🖥️ Screenshots](#️-screenshots)
-- [🔮 Future Improvements](#-future-improvements)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
-- [👤 Author](#-author)
-
----
-
-## ✨ Features
-
-| Feature | Description |
-|---|---|
-| 📚 **Book Management** | Add, update, delete, and search books by title, author, or ISBN |
-| 👤 **Member Management** | Register new members and manage their profiles |
-| 🔄 **Borrow & Return** | Issue books to members and record return transactions |
-| 🔍 **Search & Filter** | Quickly search through the catalog with multiple filters |
-| 📊 **Records & Reports** | View borrow history, overdue books, and availability status |
-| 🛡️ **Input Validation** | Robust error handling and user input validation |
-
----
-
-## 🛠️ Tech Stack
-
-<div align="center">
-
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![OOP](https://img.shields.io/badge/OOP-Principles-blue?style=for-the-badge&logo=buffer&logoColor=white)
-![File I/O](https://img.shields.io/badge/File_I%2FO-Storage-informational?style=for-the-badge&logo=databricks&logoColor=white)
-![CLI](https://img.shields.io/badge/Console-Interface-black?style=for-the-badge&logo=gnubash&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
 
 </div>
 
 ---
 
-## 📁 Project Structure
+> A full-featured Library Management System with a Node.js/Express REST API backend, MySQL database, and a plain HTML/CSS/JavaScript frontend.
+
+---
+
+## Table of Contents
+
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Database Schema](#-database-schema)
+- [API Endpoints](#-api-endpoints)
+- [Getting Started](#-getting-started)
+- [Screenshots](#-screenshots)
+- [Contributing](#-contributing)
+
+---
+
+## Features
+
+- View all books along with their publisher details
+- Add new books and members
+- Borrow books with automatic availability tracking
+- View currently borrowed books
+- View top 5 most popular (most borrowed) books
+- Remove members from the system
+- Relational MySQL database with foreign key constraints
+- RESTful API backend served with Express.js
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|------------|----------------------------------|
+| Frontend | HTML, CSS, JavaScript |
+| Backend | Node.js, Express.js |
+| Database | MySQL |
+| DB Driver | mysql2 |
+| Dev Tool | nodemon |
+
+---
+
+## Project Structure
 
 ```
 library-management-system/
 │
-├── src/
-│   ├── Main.java              # Entry point
-│   ├── Book.java              # Book model class
-│   ├── Member.java            # Member model class
-│   ├── Library.java           # Core library logic
-│   ├── BorrowRecord.java      # Borrow/Return records
-│   └── Utils.java             # Helper utilities
+├── backend/
+│   ├── server.js          # Express server & all API routes
+│   ├── package.json       # Node dependencies (express, mysql2, cors)
+│   └── package-lock.json
 │
-├── data/
-│   ├── books.txt              # Persistent book data
-│   └── members.txt            # Persistent member data
+├── frontend/
+│   ├── index.html         # Main UI
+│   ├── app.js             # Frontend logic & API calls
+│   └── style.css          # Styling
 │
+├── schema.sql             # Database & table definitions
+├── data.sql               # Sample/seed data (multi-line INSERTs)
+├── er_diagram.mmd         # ER diagram (Mermaid format)
+├── Project_Report.md      # Project report
+├── Project_Report_Final.pdf
 └── README.md
 ```
 
 ---
 
-## 🚀 Getting Started
+## Database Schema
+
+Database: `library_db`
+
+| Table | Key Columns |
+|--------------------|-------------------------------------------------------------|
+| `publishers` | `publisher_id`, `name`, `contact_email`, `phone` |
+| `books` | `book_id`, `title`, `author`, `isbn`, `published_year`, `total_copies`, `available_copies`, `publisher_id` |
+| `members` | `member_id`, `first_name`, `last_name`, `email`, `phone`, `join_date` |
+| `borrow_transactions` | `transaction_id`, `book_id`, `member_id`, `borrow_date`, `due_date`, `return_date`, `status` |
+
+See [`schema.sql`](schema.sql) for full table definitions and [`data.sql`](data.sql) for seed data.
+
+---
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------------------|------------------------------------|
+| GET | `/api/books` | Get all books with publisher names |
+| GET | `/api/members` | Get all members |
+| GET | `/api/publishers` | Get all publishers |
+| GET | `/api/borrowed` | Get currently borrowed books |
+| GET | `/api/popular-books` | Get top 5 most borrowed books |
+| POST | `/api/books` | Add a new book |
+| POST | `/api/members` | Add a new member |
+| POST | `/api/borrow` | Issue a book to a member |
+| DELETE | `/api/members/:id` | Remove a member by ID |
+
+---
+
+## Getting Started
 
 ### Prerequisites
 
-- Java JDK 8 or higher installed
-- Any IDE (IntelliJ IDEA, Eclipse, VS Code) or terminal
+- [Node.js](https://nodejs.org/) (v16+)
+- [MySQL](https://www.mysql.com/) (v8+)
 
-### Installation & Run
+### 1. Clone the repository
 
 ```bash
-# 1. Clone the repository
 git clone https://github.com/Uttkarshchambiyal/library-management-system.git
-
-# 2. Navigate into the project folder
 cd library-management-system
-
-# 3. Compile the source files
-javac src/*.java
-
-# 4. Run the application
-java -cp src Main
 ```
+
+### 2. Set up the database
+
+Open MySQL and run:
+
+```bash
+mysql -u root -p < schema.sql
+mysql -u root -p library_db < data.sql
+```
+
+### 3. Configure the backend
+
+In `backend/server.js`, update the DB credentials if needed:
+
+```js
+const db = mysql.createPool({
+  host: 'localhost',
+  user: 'root',
+  password: 'your_password',
+  database: 'library_db',
+});
+```
+
+### 4. Start the backend server
+
+```bash
+cd backend
+npm install
+npm start
+# or for development:
+npm run dev
+```
+
+The server runs on `http://localhost:3000` by default.
+
+### 5. Open the frontend
+
+Open `frontend/index.html` directly in your browser, or serve it with any static file server.
 
 ---
 
-## 📖 How It Works
+## Screenshots
 
-```
-┌─────────────────────────────────────────┐
-│           LIBRARY SYSTEM FLOW           │
-├─────────────────────────────────────────┤
-│  START -> Main Menu                      │
-│       |-- 1. Manage Books               │
-│       |      |-- Add Book               │
-│       |      |-- Remove Book            │
-│       |      +-- Search Book            │
-│       |-- 2. Manage Members             │
-│       |      |-- Register Member        │
-│       |      +-- View Members           │
-│       |-- 3. Borrow / Return Book       │
-│       |      |-- Issue Book             │
-│       |      +-- Return Book            │
-│       +-- 4. View Records and Exit      │
-└─────────────────────────────────────────┘
-```
-
----
-
-## 🖥️ Screenshots
-
-> 📸 *Add your screenshots inside an `assets/` folder and link them below.*
+> Add your screenshots inside an `assets/` folder and link them below.
 
 | Main Menu | Book Management | Borrow Record |
-|:---------:|:---------------:|:-------------:|
-| ![main](assets/main-menu.png) | ![books](assets/book-mgmt.png) | ![borrow](assets/borrow.png) |
+|-----------|----------------|---------------|
+| ![main](assets/main) | ![books](assets/books) | ![borrow](assets/borrow) |
 
 ---
 
-## 🔮 Future Improvements
-
-- [ ] 🖥️ GUI version using Java Swing or JavaFX
-- [ ] 🗄️ Database integration (MySQL / SQLite)
-- [ ] 📧 Email notifications for overdue books
-- [ ] 📱 Web-based frontend (React + Spring Boot)
-- [ ] 🔐 Role-based login (Admin / Librarian / Member)
-- [ ] 📊 Analytics dashboard for book statistics
-
----
-
-## 🤝 Contributing
+## Contributing
 
 Contributions are always welcome! Here's how:
 
@@ -174,21 +198,12 @@ git push origin feature/AmazingFeature
 
 ---
 
-## 📄 License
+## License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ---
 
-## 👤 Author
-
 <div align="center">
-
-**Uttkarsh Chambiyal**
-
-[![GitHub](https://img.shields.io/badge/GitHub-Uttkarshchambiyal-181717?style=for-the-badge&logo=github)](https://github.com/Uttkarshchambiyal)
-
-<!-- Animated Footer Wave -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer&text=Thanks%20for%20visiting!%20Star%20this%20repo!&fontSize=18&fontColor=fff&animation=twinkling" width="100%"/>
-
+Made with by Uttkarsh & Sahil
 </div>
