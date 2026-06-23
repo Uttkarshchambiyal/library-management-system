@@ -77,6 +77,7 @@ library-management-system/
 ├── data.sql               # Sample/seed data (multi-line INSERTs)
 ├── er_diagram.mmd         # ER diagram (Mermaid format)
 ├── Project_Report.md      # Project report
+├── Queries.sql            # Related mandatory queries
 ├── Project_Report_Final.pdf
 └── README.md
 ```
